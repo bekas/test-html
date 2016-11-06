@@ -1,0 +1,206 @@
+
+<h1>Спец-символы: </h1>
+<!--<--> &lt; <br/>	
+<!--\>--> &gt; <br/>
+<!--"--> &quot; <br/>
+<!--&--> &amp; <br/>
+<!--(c)-->	&copy; <br/>
+<!--TM-->	&trade; <br/>
+<!-- --> &nbsp; <br/>
+
+<h1>Заголовки: </h1>
+<h1>Заголовк H1</h1>
+<h2>Заголовк H2</h2>
+<h3>Заголовк H3</h3>
+<h4>Заголовк H4</h4>
+<h5>Заголовк H5</h5>
+<h6>Заголовк H6</h6>
+
+<p>Много разных букв, из которых состоит <br/> текст</p>
+
+<b>Жирный</b><br/>
+<i>Курсив</i><br/>
+<u>Подчеркнутый</u><br/>
+Под<sub>строчный</sub><br/>
+Над<sup>строчный</sup><br/>
+<pre>Текст, который       
+       не изменяется          
+                 браузером</pre><br/>
+<tt>Моноширинный</tt><br/>
+
+<b>Жирный</b> -> <strong>Выделенный</strong> <br/>
+<i>Курсив</i> -> <em>Акцентированный</em> <br/>
+
+
+<a href="ftp://nonameftpserver.ru">FTP</a>
+<a href="mailto:adm@mail.ru">Послать письмо</a>
+<a href="http://ya.ru">Ya</a>
+<a href="chapter1.html">Глава 1</a>
+<a href="../news.html">Новости</a>
+<h3 name=1>Раздел 1</h3>
+<a href=#1>Раздел 1</a>
+
+<ul>
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
+    <li>Пункт 4</li>
+</ul>
+
+<ol type="i">
+    <li>Пункт 1</li>
+    <li>Пункт 2</li>
+    <li>Пункт 3</li>
+    <li>Пункт 4</li>
+</ol>
+
+
+
+<table>
+    <tr>
+        <th>Заголовок 1</th>
+        <th>Заголовок 2</th>
+        <th>Заголовок 3</th>
+    </tr>
+    <tr>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+    </tr>
+    <tr>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>31</td>
+        <td>32</td>
+        <td>33</td>
+    </tr>
+</table>
+<br><br>
+<br><br><br><br><br>
+
+
+
+Это - <span> строчный элемент</span> <span> 2 - строчный элемент</span>
+
+
+<br><br>
+<br><br><br><br><br>
+<br><br>
+<br><br><br><br><br>
+
+<div class="block4">
+    <div class="block2">
+        <div class="block1">Первый блочный элемент</div>
+        <div class="block1">Второй блочный элемент</div>
+    </div>
+    <div class="block3">
+        Третий блочный элемент
+    </div>
+</div>
+
+<style>
+    .block1{
+        width:60px;
+        background: red; 
+        display: inline-block;
+    }
+    .block2{
+        width:125px;
+        background: blue;  
+        padding: 5px;  
+    }
+    .block3{
+        background:green;
+        margin-top: 5px;
+        width:135px;
+    }
+    .block4{
+        background:yellow;
+        padding: 5px;
+        width:135px;
+    }
+</style>
+
+
+<br><br>
+<br><br><br><br><br>
+<br><br>
+<br><br><br><br><br>
+
+<dl>
+    <dt>HTML</dt>
+    <dd>Гипертекстовый язык разметки</dd>
+    <dt>CSS</dt>
+    <dd>Каскадные таблицы стилей</dd>
+</dl>
+
+<iframe src="mini.html" width="300" height="50"></iframe>
+
+<br>
+<img src="ca.gif" width="200" height="200" alt="CAT">
+
+<form method="POST" action="/user/register" >
+    <div><input type="button" name="btn" value="Button"/></div>
+    
+    <label for="email">Введите e-mail</label>
+    <div><input type="email" id="email" name="email" value="example@example"/></div>
+    
+    <div><input type="radio" name="radio" value="false"/></div>
+    <div><input type="date" name="check" /></div>
+
+    <fieldset>
+        <legend>Введите данные</legend>
+        
+        <select>
+            <option>HTML</option>
+            <option>CSS</option>
+            <option>JS</option>
+        </select>
+
+        <textarea rows="5" cols="15">
+            Многострочный текст
+        </textarea>
+
+    </fieldset>
+
+    <div><input type="submit" name="submit" value="submit"/></div>
+    <div><button type="submit">submit</button></div>
+</form>
+
+<audio controls>
+    <source src="music.mp3" type="audio/mpeg">
+    <source src="music.ogg" type="audio/ogg">
+
+</audio>
+
+<video controls playsinline autoplay muted loop poster="ca.gif">
+    <source src="out.mp4" type="video/mp4">
+</video>
+
+<canvas id="canvas"></canvas>
+
+<script>
+    var canvas=document.getElementById("canvas"),
+    ctx = canvas.getContext("2d");  
+    ctx.fillStyle = "red";  
+    ctx.ellipse(50, 60, 30, 20, 2, 0, 2 * Math.PI);                       
+    ctx.fill();
+    ctx.beginPath();      
+</script>
+
+<svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="10" cy="10" r="10" fill="green"/>
+</svg>
+
+<header>
+</header>
+<footer></footer>
+<nav></nav>
+<section>логическая область страницы</section>
+<article>логически завершенный блок контента </article>
+<aside>вторичный или связанный контент</aside>
+<meter>величина в диапазоне<meter>
+<progress>прогресс действия<progress>
